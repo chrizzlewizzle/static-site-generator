@@ -1,4 +1,5 @@
 from textnode import TextNode, TextType
+from htmlnode import HTMLNode
 
 # print("hello world")
 
@@ -7,7 +8,11 @@ from textnode import TextNode, TextType
 # print(test1)
 
 def main():
-    textnode1 = TextNode("This is some anchor text", TextType.LINK,"https://www.boot.dev")
-    print(textnode1)
-
+    # textnode1 = TextNode("This is some anchor text", TextType.LINK,"https://www.boot.dev")
+    # print(textnode1)
+    
+    htmlnode1 = HTMLNode("a", None, None,{"href": "https://www.google.com","target": "_blank"})
+    print(htmlnode1.props)
+    print(htmlnode1)
+    
 main()
