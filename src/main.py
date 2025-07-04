@@ -1,5 +1,5 @@
 from textnode import TextNode, TextType
-from htmlnode import HTMLNode
+from htmlnode import HTMLNode, LeafNode
 
 # print("hello world")
 
@@ -14,5 +14,10 @@ def main():
     htmlnode1 = HTMLNode("a", None, None,{"href": "https://www.google.com","target": "_blank"})
     print(htmlnode1.props)
     print(htmlnode1)
+    
+    leafnode1 = LeafNode("a", "This is a paragraph of text.", {"href": "https://wwww.watbenjedan.nl"})
+    print(leafnode1)
+    print(leafnode1.to_html())
+    
     
 main()
