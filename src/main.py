@@ -24,7 +24,4 @@ def main():
     # parentnode1 = ParentNode("div", [childnode1])
     #print(parentnode1.to_html())
 
-    node = TextNode("This is text with a `code block` word", TextType.TEXT)
-    new_nodes = split_nodes_delimiter([node], "`", TextType.CODE)
-    
 main()
